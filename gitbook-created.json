@@ -1,0 +1,69 @@
+{
+  "org": "LPgpRX9DEuvXMHD1gcIz",
+  "site": "site_Te3yZ",
+  "spaces": {
+    "HOME": "GdMtS9TjLkyusKGDAa4P",
+    "SOPS": "hIjfiR0zOG5516Yc4Pe6",
+    "NOTES": "GWg0o8pfoqutW7oPrFH8",
+    "AGENT": "nT1d4Xmt82QM0tFC7hrL"
+  },
+  "sections": {
+    "HOME": "sitesc_u1der",
+    "SOPS": "sitesc_US0Xp",
+    "NOTES": "sitesc_Y6WIa",
+    "AGENT": "sitesc_6UOwv"
+  },
+  "site_spaces": {
+    "HOME": "sitesp_HAjw9",
+    "SOPS": "sitesp_r5Gmi",
+    "NOTES": "sitesp_UMpAk",
+    "AGENT": "sitesp_6Phes"
+  },
+  "site_object": {
+    "object": "site",
+    "id": "site_Te3yZ",
+    "type": "ultimate",
+    "appliedType": "ultimate",
+    "title": "Commenda Operations Knowledge Base",
+    "icon": {
+      "icon": {
+        "dark": "https://www.google.com/s2/favicons?domain=gitbook.io&sz=256",
+        "light": "https://www.google.com/s2/favicons?domain=gitbook.io&sz=256"
+      }
+    },
+    "basename": "commenda-operations-knowledge-base",
+    "visibility": "share-link",
+    "permissionsModel": "site",
+    "defaultLevel": null,
+    "published": false,
+    "createdAt": "2026-07-02T20:56:53.000Z",
+    "siteSpaces": 0,
+    "features": [
+      {
+        "id": "sites-share-links",
+        "plan": "premium",
+        "frozen": false
+      },
+      {
+        "id": "sites-ai-assistant",
+        "plan": "ultimate",
+        "frozen": false
+      },
+      {
+        "id": "sites-pdf-export",
+        "plan": "premium",
+        "frozen": false
+      },
+      {
+        "id": "sites-page-feedback",
+        "plan": "premium",
+        "frozen": false
+      }
+    ],
+    "urls": {
+      "location": "/orgs/LPgpRX9DEuvXMHD1gcIz/sites/site_Te3yZ",
+      "app": "https://app.gitbook.com/o/LPgpRX9DEuvXMHD1gcIz/sites/site_Te3yZ",
+      "preview": "https://sites.gitbook.com/preview/site_Te3yZ/"
+    }
+  }
+}

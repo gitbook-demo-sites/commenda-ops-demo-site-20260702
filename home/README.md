@@ -33,9 +33,9 @@ Demo assumption: this is a purpose-built first draft based on Commenda's public 
 ## Start from the job
 
 <table data-view="cards"><thead><tr><th width="48"></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody>
-<tr><td><i class="fa-list-check"></i></td><td><strong>Run the SOP database</strong></td><td>Standardized operating procedures for entity launch, filings, ERP sync, and client delivery.</td><td><a href="https://app.gitbook.com/s/XSPACE_SOPS/">Run the SOP database</a></td></tr>
-<tr><td><i class="fa-clipboard-list"></i></td><td><strong>Use process notes</strong></td><td>Living notes for country playbooks, exceptions, service handoffs, and internal decisions.</td><td><a href="https://app.gitbook.com/s/XSPACE_NOTES/">Use process notes</a></td></tr>
-<tr><td><i class="fa-robot"></i></td><td><strong>Prepare agent answers</strong></td><td>Metadata, answer rules, review workflow, and MCP-ready knowledge contracts.</td><td><a href="https://app.gitbook.com/s/XSPACE_AGENT/">Prepare agent answers</a></td></tr>
+<tr><td><i class="fa-list-check"></i></td><td><strong>Run the SOP database</strong></td><td>Standardized operating procedures for entity launch, filings, ERP sync, and client delivery.</td><td><a href="https://app.gitbook.com/s/hIjfiR0zOG5516Yc4Pe6/">Run the SOP database</a></td></tr>
+<tr><td><i class="fa-clipboard-list"></i></td><td><strong>Use process notes</strong></td><td>Living notes for country playbooks, exceptions, service handoffs, and internal decisions.</td><td><a href="https://app.gitbook.com/s/GWg0o8pfoqutW7oPrFH8/">Use process notes</a></td></tr>
+<tr><td><i class="fa-robot"></i></td><td><strong>Prepare agent answers</strong></td><td>Metadata, answer rules, review workflow, and MCP-ready knowledge contracts.</td><td><a href="https://app.gitbook.com/s/nT1d4Xmt82QM0tFC7hrL/">Prepare agent answers</a></td></tr>
 <tr><td><i class="fa-route"></i></td><td><strong>Review the demo map</strong></td><td>How this draft maps Commenda's public operating model into a GitBook site.</td><td><a href="demo-map.md">Review the demo map</a></td></tr>
 </tbody></table>
 
