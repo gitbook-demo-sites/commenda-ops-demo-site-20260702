@@ -107,60 +107,65 @@ def main():
         raise SystemExit("Usage: GITBOOK_TOKEN=... python3 publish_to_gitbook.py <gitbook_org_id>")
 
     org_id = sys.argv[1]
-    _, site = api(
-        "POST",
-        f"/orgs/{org_id}/sites",
-        {"type": "ultimate", "title": "Commenda Operations Knowledge Base", "visibility": "share-link"},
-    )
-    site_id = site["id"]
-    api(
-        "PATCH",
-        f"/orgs/{org_id}/sites/{site_id}",
-        {
-            "title": "Commenda Operations Knowledge Base",
-            "visibility": "share-link",
-            "basename": "commenda-operations-knowledge-base",
-        },
-    )
-
-    created = {"org": org_id, "site": site_id, "spaces": {}, "sections": {}, "site_spaces": {}, "site_object": site}
-    for item in SPACES:
-        _, space = api(
+    created_path = ROOT / "gitbook-created.json"
+    if created_path.exists():
+        created = json.loads(created_path.read_text(encoding="utf-8"))
+        site_id = created["site"]
+    else:
+        _, site = api(
             "POST",
-            f"/orgs/{org_id}/spaces",
-            {"title": item["title"], "emoji": item["emoji"], "empty": True, "editMode": "live"},
+            f"/orgs/{org_id}/sites",
+            {"type": "ultimate", "title": "Commenda Operations Knowledge Base", "visibility": "share-link"},
         )
-        space_id = space["id"]
-        created["spaces"][item["key"]] = space_id
-        _, section = api(
-            "POST",
-            f"/orgs/{org_id}/sites/{site_id}/sections",
-            {"spaceId": space_id, "title": item["title"], "icon": item["icon"], "draft": False},
-        )
-        section_id = section["id"]
-        site_space_id = section["siteSpaces"][0]["id"]
-        created["sections"][item["key"]] = section_id
-        created["site_spaces"][item["key"]] = site_space_id
+        site_id = site["id"]
         api(
             "PATCH",
-            f"/orgs/{org_id}/sites/{site_id}/sections/{section_id}",
+            f"/orgs/{org_id}/sites/{site_id}",
             {
-                "path": item["path"],
-                "description": item["description"],
-                "draft": False,
-                "defaultSiteSpace": site_space_id,
+                "title": "Commenda Operations Knowledge Base",
+                "visibility": "share-link",
+                "basename": "commenda-operations-knowledge-base",
             },
         )
 
-    api(
-        "PATCH",
-        f"/orgs/{org_id}/sites/{site_id}",
-        {"defaultSiteSection": created["sections"]["HOME"], "defaultSiteSpace": created["site_spaces"]["HOME"]},
-    )
+        created = {"org": org_id, "site": site_id, "spaces": {}, "sections": {}, "site_spaces": {}, "site_object": site}
+        for item in SPACES:
+            _, space = api(
+                "POST",
+                f"/orgs/{org_id}/spaces",
+                {"title": item["title"], "emoji": item["emoji"], "empty": True, "editMode": "live"},
+            )
+            space_id = space["id"]
+            created["spaces"][item["key"]] = space_id
+            _, section = api(
+                "POST",
+                f"/orgs/{org_id}/sites/{site_id}/sections",
+                {"spaceId": space_id, "title": item["title"], "icon": item["icon"], "draft": False},
+            )
+            section_id = section["id"]
+            site_space_id = section["siteSpaces"][0]["id"]
+            created["sections"][item["key"]] = section_id
+            created["site_spaces"][item["key"]] = site_space_id
+            api(
+                "PATCH",
+                f"/orgs/{org_id}/sites/{site_id}/sections/{section_id}",
+                {
+                    "path": item["path"],
+                    "description": item["description"],
+                    "draft": False,
+                    "defaultSiteSpace": site_space_id,
+                },
+            )
 
-    replace_sentinels(created["spaces"])
-    (ROOT / "gitbook-created.json").write_text(json.dumps(created, indent=2) + "\n", encoding="utf-8")
-    git_commit_push("Resolve Commenda GitBook space links")
+        api(
+            "PATCH",
+            f"/orgs/{org_id}/sites/{site_id}",
+            {"defaultSiteSection": created["sections"]["HOME"], "defaultSiteSpace": created["site_spaces"]["HOME"]},
+        )
+
+        replace_sentinels(created["spaces"])
+        created_path.write_text(json.dumps(created, indent=2) + "\n", encoding="utf-8")
+        git_commit_push("Resolve Commenda GitBook space links")
 
     imports = {}
     for item in SPACES:

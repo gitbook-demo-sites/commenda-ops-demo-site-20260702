@@ -1,0 +1,22 @@
+{
+  "HOME": {
+    "status": 204,
+    "space": "GdMtS9TjLkyusKGDAa4P",
+    "folder": "home"
+  },
+  "SOPS": {
+    "status": 204,
+    "space": "hIjfiR0zOG5516Yc4Pe6",
+    "folder": "sop-database"
+  },
+  "NOTES": {
+    "status": 204,
+    "space": "GWg0o8pfoqutW7oPrFH8",
+    "folder": "process-notes"
+  },
+  "AGENT": {
+    "status": 204,
+    "space": "nT1d4Xmt82QM0tFC7hrL",
+    "folder": "agent-governance"
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "updatedAt": "2026-07-02T20:57:50.000Z",
+  "title": "Commenda Operations Knowledge Base",
+  "localizedTitle": {},
+  "internationalization": {
+    "locale": "en"
+  },
+  "styling": {
+    "theme": "clean",
+    "primaryColor": {
+      "dark": "#22C55E",
+      "light": "#16A34A"
+    },
+    "infoColor": {
+      "dark": "#93C5FD",
+      "light": "#2563EB"
+    },
+    "successColor": {
+      "dark": "#22C55E",
+      "light": "#16A34A"
+    },
+    "warningColor": {
+      "dark": "#F59E0B",
+      "light": "#B45309"
+    },
+    "dangerColor": {
+      "dark": "#F87171",
+      "light": "#DC2626"
+    },
+    "tint": {
+      "color": {
+        "dark": "#111827",
+        "light": "#F7F4EF"
+      }
+    },
+    "corners": "rounded",
+    "depth": "flat",
+    "links": "accent",
+    "font": "Inter",
+    "monospaceFont": "IBMPlexMono",
+    "icons": "regular",
+    "background": "plain",
+    "sidebar": {
+      "background": "filled",
+      "list": "line"
+    },
+    "codeTheme": {
+      "default": {
+        "light": "default-light",
+        "dark": "default-dark"
+      },
+      "openapi": {
+        "light": "default-light",
+        "dark": "default-dark"
+      }
+    },
+    "search": "prominent"
+  },
+  "favicon": {
+    "icon": {
+      "light": "https://raw.githubusercontent.com/gitbook-demo-sites/commenda-ops-demo-site-20260702/main/assets/commenda-wordmark.svg",
+      "dark": "https://raw.githubusercontent.com/gitbook-demo-sites/commenda-ops-demo-site-20260702/main/assets/commenda-wordmark.svg"
+    }
+  },
+  "header": {
+    "preset": "default",
+    "logo": {
+      "light": "https://raw.githubusercontent.com/gitbook-demo-sites/commenda-ops-demo-site-20260702/main/assets/commenda-wordmark.svg",
+      "dark": "https://raw.githubusercontent.com/gitbook-demo-sites/commenda-ops-demo-site-20260702/main/assets/commenda-wordmark.svg"
+    },
+    "links": [
+      {
+        "to": {
+          "kind": "space",
+          "space": "hIjfiR0zOG5516Yc4Pe6"
+        },
+        "links": [],
+        "style": "link",
+        "title": "SOP Database",
+        "localizedTitle": {}
+      },
+      {
+        "to": {
+          "kind": "space",
+          "space": "GWg0o8pfoqutW7oPrFH8"
+        },
+        "links": [],
+        "style": "link",
+        "title": "Process Notes",
+        "localizedTitle": {}
+      },
+      {
+        "to": {
+          "kind": "space",
+          "space": "nT1d4Xmt82QM0tFC7hrL"
+        },
+        "links": [],
+        "style": "link",
+        "title": "Agent Governance",
+        "localizedTitle": {}
+      },
+      {
+        "to": {
+          "url": "https://www.commenda.io/",
+          "kind": "url"
+        },
+        "links": [],
+        "style": "button-secondary",
+        "title": "Commenda",
+        "localizedTitle": {}
+      }
+    ]
+  },
+  "footer": {
+    "logo": {
+      "light": "https://raw.githubusercontent.com/gitbook-demo-sites/commenda-ops-demo-site-20260702/main/assets/commenda-wordmark.svg",
+      "dark": "https://raw.githubusercontent.com/gitbook-demo-sites/commenda-ops-demo-site-20260702/main/assets/commenda-wordmark.svg"
+    },
+    "groups": [
+      {
+        "links": [
+          {
+            "to": {
+              "kind": "space",
+              "space": "GdMtS9TjLkyusKGDAa4P"
+            },
+            "title": "Home",
+            "localizedTitle": {}
+          },
+          {
+            "to": {
+              "kind": "space",
+              "space": "hIjfiR0zOG5516Yc4Pe6"
+            },
+            "title": "SOP Database",
+            "localizedTitle": {}
+          },
+          {
+            "to": {
+              "kind": "space",
+              "space": "GWg0o8pfoqutW7oPrFH8"
+            },
+            "title": "Process Notes",
+            "localizedTitle": {}
+          },
+          {
+            "to": {
+              "kind": "space",
+              "space": "nT1d4Xmt82QM0tFC7hrL"
+            },
+            "title": "Agent Governance",
+            "localizedTitle": {}
+          }
+        ],
+        "title": "Demo sections",
+        "localizedTitle": {}
+      },
+      {
+        "links": [
+          {
+            "to": {
+              "url": "https://github.com/gitbook-demo-sites/commenda-ops-demo-site-20260702",
+              "kind": "url"
+            },
+            "title": "Source repo",
+            "localizedTitle": {}
+          },
+          {
+            "to": {
+              "url": "https://www.commenda.io/",
+              "kind": "url"
+            },
+            "title": "Commenda website",
+            "localizedTitle": {}
+          }
+        ],
+        "title": "Sources",
+        "localizedTitle": {}
+      }
+    ],
+    "copyright": "Commenda Operations Knowledge Base - first-draft GitBook demo."
+  },
+  "themes": {
+    "default": "light",
+    "toggeable": true
+  },
+  "trademark": {
+    "enabled": true
+  },
+  "feedback": {
+    "enabled": true
+  },
+  "ai": {
+    "mode": "assistant",
+    "suggestions": [
+      "What is the current entity launch SOP?",
+      "How should we triage a filing deadline risk?",
+      "When can a process note become an approved SOP?",
+      "What should an agent do if two sources conflict?",
+      "Which evidence is required for a transfer pricing pack?"
+    ]
+  },
+  "advancedCustomization": {
+    "enabled": true
+  },
+  "pageActions": {
+    "items": [
+      "assistant",
+      "markdown",
+      "external-ai",
+      "mcp",
+      "pdf"
+    ]
+  },
+  "pagination": {
+    "enabled": true
+  },
+  "privacyPolicy": {
+    "url": "https://www.commenda.io/privacy-policy"
+  },
+  "socialPreview": {
+    "url": "https://raw.githubusercontent.com/gitbook-demo-sites/commenda-ops-demo-site-20260702/main/assets/commenda-ops-cover.svg"
+  },
+  "socialAccounts": [],
+  "externalLinks": {
+    "target": "self"
+  },
+  "insights": {
+    "trackingCookie": true
+  }
+}

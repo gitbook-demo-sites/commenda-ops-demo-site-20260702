@@ -1,0 +1,82 @@
+{
+  "publish_status": 200,
+  "publish": {
+    "object": "site",
+    "id": "site_Te3yZ",
+    "type": "ultimate",
+    "appliedType": "ultimate",
+    "title": "Commenda Operations Knowledge Base",
+    "icon": {
+      "icon": {
+        "dark": "https://raw.githubusercontent.com/gitbook-demo-sites/commenda-ops-demo-site-20260702/main/assets/commenda-wordmark.svg",
+        "light": "https://raw.githubusercontent.com/gitbook-demo-sites/commenda-ops-demo-site-20260702/main/assets/commenda-wordmark.svg"
+      }
+    },
+    "basename": "commenda-operations-knowledge-base",
+    "visibility": "share-link",
+    "permissionsModel": "site",
+    "defaultLevel": null,
+    "published": true,
+    "createdAt": "2026-07-02T20:56:53.000Z",
+    "siteSpaces": 4,
+    "features": [
+      {
+        "id": "sites-share-links",
+        "plan": "premium",
+        "frozen": false
+      },
+      {
+        "id": "sites-ai-assistant",
+        "plan": "ultimate",
+        "frozen": false
+      },
+      {
+        "id": "sites-pdf-export",
+        "plan": "premium",
+        "frozen": false
+      },
+      {
+        "id": "sites-page-feedback",
+        "plan": "premium",
+        "frozen": false
+      },
+      {
+        "id": "sites-advanced-customization",
+        "plan": "premium",
+        "frozen": false,
+        "customizations": [
+          "header-logo",
+          "footer-logo",
+          "footer-links",
+          "footer-copyright",
+          "semantic-colors"
+        ]
+      },
+      {
+        "id": "sites-sections",
+        "plan": "ultimate",
+        "frozen": false
+      }
+    ],
+    "urls": {
+      "location": "/orgs/LPgpRX9DEuvXMHD1gcIz/sites/site_Te3yZ",
+      "app": "https://app.gitbook.com/o/LPgpRX9DEuvXMHD1gcIz/sites/site_Te3yZ",
+      "preview": "https://sites.gitbook.com/preview/site_Te3yZ/"
+    }
+  },
+  "share_status": 201,
+  "share": {
+    "object": "share-link",
+    "id": "v3VX97p8fhgssbrLaE76",
+    "createdAt": "2026-07-02T20:57:51.000Z",
+    "name": "Commenda operations demo review",
+    "active": true,
+    "urls": {
+      "published": "https://commenda-1.gitbook.io/commenda-operations-knowledge-base/v3VX97p8fhgssbrLaE76/"
+    }
+  },
+  "published_url": "https://commenda-1.gitbook.io/commenda-operations-knowledge-base/v3VX97p8fhgssbrLaE76/",
+  "app_url": "https://app.gitbook.com/o/LPgpRX9DEuvXMHD1gcIz/sites/site_Te3yZ",
+  "preview_url": "https://sites.gitbook.com/preview/site_Te3yZ/",
+  "repo": "https://github.com/gitbook-demo-sites/commenda-ops-demo-site-20260702"
+}
